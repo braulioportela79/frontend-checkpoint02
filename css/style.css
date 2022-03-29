@@ -10,10 +10,32 @@ body {
   --primary-color: #0099d9;
   --secondary-color: #fac635;
   --text-color: #000103;
-  --decoration-color: #ec0112;
+  --decoration-color: #b9010d;
   font-family: Work Sans, Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
+header {
+  background: var(--decoration-color);
+  height: 8vh;
+}
 
+.section_banner {
+  background: url('../img/bg_banner.jpg') no-repeat;
+  background-size: cover;
+}
+
+.banner {
+  height: 92vh;
+  background: url('../img/banner_fg.png') no-repeat;
+  background-size: cover;
+  background-position: top left 65%;
+}
+
+@media (min-width: 960px) {
+  .banner {
+    background-size: contain;
+    background-position: top center;
+  }
+}
