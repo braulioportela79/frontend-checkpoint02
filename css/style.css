@@ -45,6 +45,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  display: none;
 }
 
 nav {
@@ -160,5 +161,9 @@ nav a {
 
   .menuMobile {
     display: none;
+  }
+
+  .menuDesktop {
+    display: flex;
   }
 }
