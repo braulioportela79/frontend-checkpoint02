@@ -35,7 +35,7 @@ header {
 }
 
 .menuMobile #dh_logo {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .logo {
@@ -183,6 +183,12 @@ nav a {
 
 .container {
   display: flex;
+  scroll-behavior: smooth;
+}
+
+footer {
+  height: 200px;
+  background: var(--decoration-color);
 }
 
 @media (min-width: 695px) {
