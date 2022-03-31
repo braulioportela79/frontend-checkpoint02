@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --primary-color: #0099d9;
+  --secondary-color: #fac635;
+  --text-color: #000103;
+  --decoration-color: #b9010d;
+  --nav-color: #f3f3f3;
+  font-family: Work Sans, Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.background_img_description img{
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;   
+}
+
+.titleDescript {
+    font-size: 3rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.curiosidades {
+    margin: 10px;
+}
+
+.descriptionlink {
+    text-decoration: none;
+    color: var(--primary-color);
+}
