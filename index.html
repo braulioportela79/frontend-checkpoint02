@@ -58,7 +58,7 @@
         <div class="banner">
           <div class="banner_desc">
             <img src="./img/fg_logo.png" alt="" id="banner_fg_logo" />
-            <p>
+            <p id="banner_desc">
               A série animada "Family Guy" apresenta as aventuras da família
               Griffin.
             </p>
@@ -82,14 +82,40 @@
         scrollTrigger: {
           scrub: 0.5,
         },
-        x: -1500,
-        y: -500,
+        x: -600,
+        y: 300,
       });
       gsap.from('#header_fg_logo', {
         scrollTrigger: {
-          scrub: 0.5,
+          start: 500,
+          scrub: 1,
         },
         autoAlpha: 0,
+      });
+      gsap.to('#banner_desc', {
+        scrollTrigger: {
+          start: 200,
+          scrub: 0.5,
+        },
+        x: 1000,
+        y: 500,
+        autoAlpha: 0,
+      });
+      gsap.to('.button', {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: 1000,
+        autoAlpha: 0,
+      });
+      gsap.to('.banner_img', {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        scale: 0,
+        autoAlpha: 1,
+        y: 500,
+        x: -1000,
       });
     </script>
   </body>
