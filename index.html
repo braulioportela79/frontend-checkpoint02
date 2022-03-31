@@ -10,7 +10,15 @@
   <body>
     <header>
       <div class="menuMobile">
-        <div class="logo"><img src="./img/fg_logo.png" alt="" /></div>
+        <div class="logo">
+          <img src="./img/dhlogo.png" alt="DH Logo" id="dh_logo" />
+          <img
+            src="./img/fg_logo.png"
+            alt="Family Guy Logo"
+            id="header_fg_logo_mobile"
+          />
+        </div>
+
         <div class="mobileIcon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +35,14 @@
         </div>
       </div>
       <div class="menuDesktop">
-        <div class="logo"><img src="./img/fg_logo_white.png" alt="" /></div>
+        <div class="logo">
+          <img src="./img/dhlogo.png" alt="DH Logo" id="dh_logo" />
+          <img
+            src="./img/fg_logo.png"
+            alt="Family Guy Logo"
+            id="header_fg_logo"
+          />
+        </div>
         <nav>
           <ul>
             <li><a href="">Home</a></li>
@@ -42,7 +57,7 @@
       <section class="section_banner">
         <div class="banner">
           <div class="banner_desc">
-            <img src="./img/fg_logo.png" alt="" />
+            <img src="./img/fg_logo.png" alt="" id="banner_fg_logo" />
             <p>
               A série animada "Family Guy" apresenta as aventuras da família
               Griffin.
@@ -53,11 +68,29 @@
         </div>
       </section>
       <section class="character">
-        <h2>PERSONAGENS</h2>
+        <div class="section_header"><h2>PERSONAGENS</h2></div>
+
         <div class="container">
           <div class="card"></div>
         </div>
       </section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.to('#banner_fg_logo', {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        x: -1500,
+        y: -500,
+      });
+      gsap.from('#header_fg_logo', {
+        scrollTrigger: {
+          scrub: 0.5,
+        },
+        autoAlpha: 0,
+      });
+    </script>
   </body>
 </html>
