@@ -81,7 +81,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
     <script>
-      gsap.to('#banner_fg_logo', {
+      gsap.to("#banner_fg_logo", {
         scrollTrigger: {
           scrub: 0.5,
           end: 500,
@@ -89,7 +89,7 @@
         x: -630,
         y: 300,
       });
-      gsap.to('#banner_fg_logo', {
+      gsap.to("#banner_fg_logo", {
         scrollTrigger: {
           scrub: 0.5,
           start: 100,
@@ -99,14 +99,14 @@
         scale: 0.2,
         autoAlpha: 0,
       });
-      gsap.from('#header_fg_logo', {
+      gsap.from("#header_fg_logo", {
         scrollTrigger: {
           start: 500,
           scrub: 1,
         },
         autoAlpha: 0,
       });
-      gsap.to('#banner_desc', {
+      gsap.to("#banner_desc", {
         scrollTrigger: {
           start: 200,
           scrub: 0.5,
@@ -115,14 +115,14 @@
         y: 500,
         autoAlpha: 0,
       });
-      gsap.to('.button', {
+      gsap.to(".button", {
         scrollTrigger: {
           scrub: 0.5,
         },
         x: 1000,
         autoAlpha: 0,
       });
-      gsap.to('.banner_img', {
+      gsap.to(".banner_img", {
         scrollTrigger: {
           scrub: 0.5,
           start: 80,
@@ -133,5 +133,22 @@
         x: -1000,
       });
     </script>
+
+    <div class="personagens">
+      <div class="card">
+        <div class="content">
+          <h2>Peter Griffin</h2>
+          <p>
+            Nascido como Justin Peter Griffin é o protagonista da série e
+            homem-título. Ele é descendente de um homem irlandês bêbado chamado
+            Mickey McFinnigan. Peter é um residente de Quahog, onde mora na Casa
+            31 da Rua Spooner com sua mulher Lois e seus filhos: Stewie, Meg e
+            Chris Griffin.
+          </p>
+          <a href="#">Leia mais</a>
+          <img src="./img/peter_griffing.png" />
+        </div>
+      </div>
+    </div>
   </body>
 </html>
