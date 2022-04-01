@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Family Guy | Front End - Checkpoint 02</title>
+    <link rel="stylesheet" href="./css/about_style.css" />
+    <title>Sobre Nós | Front End - Checkpoint 02</title>
   </head>
   <body>
     <header>
@@ -46,7 +47,7 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#characters">Personagens</a></li>
+            <li><a href="index.html#characters">Personagens</a></li>
             <li><a href="about.html">Sobre Nós</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
@@ -54,80 +55,11 @@
       </div>
     </header>
     <main>
-      <section class="section_banner">
-        <div class="banner">
-          <div class="banner_desc">
-            <img src="./img/fg_logo.png" alt="" id="banner_fg_logo" />
-            <p id="banner_desc">
-              A série animada "Family Guy" apresenta as aventuras da família
-              Griffin.
-            </p>
-            <button class="button">Saiba Mais</button>
-          </div>
-          <div class="banner_img"></div>
-        </div>
-      </section>
-      <section class="character" id="characters">
-        <div class="section_header"><h2>PERSONAGENS</h2></div>
-      </section>
+
     </main>
     <footer>
       <div class=""></div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
-    <script>
-      gsap.to('#banner_fg_logo', {
-        scrollTrigger: {
-          scrub: 0.5,
-          end: 500,
-        },
-        x: -630,
-        y: 300,
-      });
-      gsap.to('#banner_fg_logo', {
-        scrollTrigger: {
-          scrub: 0.5,
-          start: 100,
-          end: 1200,
-        },
-
-        scale: 0.2,
-        autoAlpha: 0,
-      });
-      gsap.from('#header_fg_logo', {
-        scrollTrigger: {
-          start: 500,
-          scrub: 1,
-        },
-        autoAlpha: 0,
-      });
-      gsap.to('#banner_desc', {
-        scrollTrigger: {
-          start: 200,
-          scrub: 0.5,
-        },
-        x: 1000,
-        y: 500,
-        autoAlpha: 0,
-      });
-      gsap.to('.button', {
-        scrollTrigger: {
-          scrub: 0.5,
-        },
-        x: 1000,
-        autoAlpha: 0,
-      });
-      gsap.to('.banner_img', {
-        scrollTrigger: {
-          scrub: 0.5,
-          start: 80,
-        },
-        scale: 0,
-        autoAlpha: 1,
-        y: 500,
-        x: -1000,
-      });
-    </script>
+    
   </body>
 </html>
