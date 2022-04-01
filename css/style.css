@@ -184,14 +184,62 @@ nav a {
 }
 
 footer {
-  height: 200px;
+  /* height: 200px; */
   background: var(--decoration-color);
+}
+
+footer .student {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  gap: 20px;
+}
+
+footer h3 {
+  font-family: Luckiest Guy;
+  letter-spacing: 1.5px;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  text-shadow: -0.5px 2px 0.5px var(--text-color);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--text-color);
+}
+
+footer p {
+  color: var(--nav-color);
+  font-size: 0.8rem;
+}
+
+footer svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-color);
+  color: var(--text-color);
+  color: var(--nav-color);
 }
 
 @media (min-width: 695px) {
   .banner_img {
     background-size: contain;
     background-position: bottom center;
+  }
+
+  footer .container {
+flex-direction: row;
+  }
+
+  footer svg {
+    margin-left: 0;
+  }
+
+  footer .student {
+    flex-direction: column;
   }
 }
 @media (min-width: 1024px) {
@@ -223,5 +271,26 @@ footer {
 
   .menuDesktop {
     display: flex;
+  }
+
+  footer {
+    padding: 20px 80px;
+  }
+
+  footer .description {
+    max-width: 300px;
+  }
+
+  footer .container {
+    justify-content: space-between;
+  }
+
+  footer h3 {
+    font-size: 1.5rem;
+
+  }
+  
+  footer p {
+    font-size: 1rem;
   }
 }
