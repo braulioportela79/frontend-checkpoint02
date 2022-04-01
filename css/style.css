@@ -155,9 +155,11 @@ nav a {
 
 .character {
   display: flex;
-  height: 1000px;
+  /* height: 1000px; */
   justify-content: center;
   padding-top: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section_header {
@@ -181,10 +183,10 @@ nav a {
   -webkit-text-stroke-color: var(--text-color);
 }
 
-.container {
+/* .container {
   display: flex;
   scroll-behavior: smooth;
-}
+} */
 
 footer {
   height: 200px;
@@ -192,7 +194,7 @@ footer {
 }
 
 .personagens {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
