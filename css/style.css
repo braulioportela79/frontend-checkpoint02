@@ -4,6 +4,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -140,6 +141,7 @@ nav a {
   font-weight: 800;
   transition: 0.2s;
   color: var(--text-color);
+  background-color: var(--nav-color);
 }
 
 .button:hover {
