@@ -191,18 +191,19 @@ footer {
   background: var(--decoration-color);
 }
 
-/* personagens */
 .personagens {
-  position: relative;
+  position: absolute;
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
 }
 
 .personagens .card {
   position: relative;
-  width: 600px;
-  height: 350px;
+  justify-content: center;
+  width: 500px;
+  height: 450px;
   margin: 20px;
   display: flex;
   justify-content: flex-start;
