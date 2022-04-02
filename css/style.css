@@ -50,12 +50,9 @@ header {
   max-height: 50%;
 }
 
-.logo #header_fg_logo {
-  max-height: 90%;
-}
-
-.logo #header_fg_logo_mobile {
-  max-height: 90%;
+.logo a img {
+  text-decoration: none;
+  max-width: 80px;
 }
 
 .mobileIcon {
@@ -193,7 +190,7 @@ nav a {
 .characters .description p {
   line-height: 2.5rem;
   font-size: 1.5rem;
-  text-align: justify;
+  text-align: center;
 }
 
 .container {
@@ -401,6 +398,10 @@ footer svg {
     display: flex;
   }
 
+  .logo a img {
+    text-decoration: none;
+    max-width: 120px;
+  }
   .container .card .content p {
     line-height: 1.5rem;
   }
