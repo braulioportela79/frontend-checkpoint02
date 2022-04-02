@@ -192,7 +192,6 @@ footer {
 footer .student {
   display: flex;
   justify-content: space-between;
-  
 }
 
 footer .container {
@@ -232,7 +231,7 @@ footer svg {
   }
 
   footer .container {
-flex-direction: row;
+    flex-direction: row;
   }
 
   footer svg {
@@ -288,9 +287,8 @@ flex-direction: row;
 
   footer h3 {
     font-size: 1.5rem;
-
   }
-  
+
   footer p {
     font-size: 1rem;
   }
