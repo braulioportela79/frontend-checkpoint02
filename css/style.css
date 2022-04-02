@@ -93,14 +93,16 @@ nav a {
 .section_banner {
   background: url('../img/bg_banner.jpg') no-repeat;
   background-size: cover;
-  height: 92vh;
+  /* height: 92vh; */
+  height: 100vh;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 92vh;
+  /* height: 92vh; */
+  height: 100vh;
   /* box-shadow: 0px 5px 13px var(--text-color); */
   overflow: hidden;
 }
@@ -110,7 +112,8 @@ nav a {
   background-size: cover;
   background-position: bottom left 65%;
   height: 80%;
-  width: 100%;
+  /* width: 100%; */
+  width: 200%;
 }
 
 .banner_desc {
@@ -365,13 +368,21 @@ footer svg {
 }
 
 @media (min-width: 1024px) {
+
+
+  .section_banner {
+    height: 92vh;
+  }
+  
   .banner_img {
     background-position: center;
     height: 100%;
+    width: 100%;
   }
 
   .banner {
     flex-direction: row-reverse;
+    height: 92vh;
   }
 
   .banner_desc {
