@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi"
+    />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Family Guy | Front End - Checkpoint 02</title>
+    <link rel="stylesheet" href="./css/desc_style.css" />
+    <title>Meg Griffin | Front End - Checkpoint 02</title>
   </head>
   <body>
     <header>
@@ -25,7 +29,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="27"
             height="27"
-            viewbox="0 0 27 27"
+            viewBox="0 0 27 27"
             fill="none"
           >
             <path
@@ -48,7 +52,7 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#characters">Personagens</a></li>
+            <li><a href="index.html#characters">Personagens</a></li>
             <li><a href="about.html">Sobre Nós</a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
@@ -56,106 +60,150 @@
       </div>
     </header>
     <main>
-      <section class="section_banner">
-        <div class="banner">
-          <div class="banner_desc">
-            <img src="./img/fg_logo.png" alt="" id="banner_fg_logo" />
-            <p id="banner_desc">
-              A série animada "Family Guy" apresenta as aventuras da família
-              Griffin.
-            </p>
-            <a href="about.html" class="button">Saiba Mais</a>
-          </div>
-          <div class="banner_img"></div>
-        </div>
-      </section>
-      <section class="characters" id="characters">
-        <div class="section_header"><h2>PERSONAGENS</h2></div>
-        <div class="description">
+      <div class="banner meg_griffin"></div>
+      <section class="description">
+        <div class="section_header"><h2>Meg Griffin</h2></div>
+        <div class="section_text">
           <p>
-            Quer conhecer mais sobre a Família Griffin? Escolha um membro da
-            família e saiba mais sobre sua personalidade.
+            É uma jovem estudante da Escola Regional James Woods. Logo depois de
+            nascer, Peter mudou seu nome na certidão de nascimento para Megatron
+            Griffin, em vez de Megan Griffin.
+          </p>
+          <p>
+            Meg é a filha mais velha da família Griffin, e seu nascimento foi
+            executado pelo médico e cirurgião Elmer Hartman. Na hora de cortar o
+            cordão umbilical, Elmer oferece a Peter a tesoura. Quando Peter
+            corta, Hartman afirma: "Esse não era o cordão. Parabéns, você tem
+            uma garota agora".
+          </p>
+          <p>
+            Logo depois, Hartman afirma que Meg nasceu com o cérebro no lugar no
+            coração, e esse é o motivo dela estar sempre usando chapéu, no caso
+            a sua touca rosa tradicional
+          </p>
+          <p>
+            No episódio Piloto, Meg usava uma touca azul, camiseta branca com a
+            beirada das mangas vermelhas. Em "A Morte Como Uma Sombra", Meg
+            revela que deseja fazer uma plástica nos lábios para deixá-los mais
+            grossos. E quando fica rico, Peter paga a plástica para ela.
+          </p>
+          <p>
+            Quando Family Guy estreou em 1999, sua idade é assumida como sendo
+            quinze anos de idade, embora nunca é estabelecida. A partir de "I
+            Never Met the Dead Man", sua idade passa a ser de dezesseis anos. Em
+            "Peter's Two Dads" passa a ter dezessete e permanece assim até fazer
+            dezoito em "Quagmire and Meg".
+          </p>
+          <p>
+            Meg é frequentemente alvo de piadas e maldades, aparentemente mais
+            do que o resto da família. Os Griffins são mostrados evitando sua
+            companhia em "Jungle Love". A família também se junta para ler o
+            diário de Meg e rir da cara dela em "Stuck Together, Torn Apart".
           </p>
         </div>
-        <div class="container">
-          <div class="card">
-            <div class="content">
-              <h2>Peter Griffin</h2>
-              <p>
-                Peter Löwenbräu Griffin, Sr., nascido como Justin Peter Griffin
-                é o protagonista da série e homem-título. Ele é descendente de
-                um homem irlandês bêbado chamado Mickey McFinnigan.
-              </p>
-              <a href="peter_griffin.html">Leia mais</a>
-            </div>
-            <img src="./img/peter_griffin.png" />
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <h2>Lois Griffin</h2>
-              <p>
-                Nascida Lois Pewterschmidt, é oriunda de uma família muito rica,
-                na qual os pais não aceitavam seu relacionamento com Peter
-                Griffin.
-              </p>
-              <a href="lois_griffin.html">Leia mais</a>
-            </div>
-            <img src="./img/lois_griffin.png" />
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <h2>Brian Griffin</h2>
-              <p>
-                É um cachorro falante, que pertence à família Griffin. Tem 8
-                anos de idade (56 na idade de humanos). Foi adotado pela família
-                quando já era adulto na idade dos cachorros.
-              </p>
-              <a href="brian_griffin.html">Leia mais</a>
-            </div>
-            <img src="./img/brian_griffin.png" />
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <h2>Meg Griffin</h2>
-              <p>
-                É uma jovem estudante da Escola Regional James Woods. Logo
-                depois de nascer, Peter mudou seu nome na certidão de nascimento
-                para Megatron Griffin, em vez de Megan Griffin.
-              </p>
-              <a href="meg_griffin.html">Leia mais</a>
-            </div>
-            <img src="./img/meg_griffin.png" />
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <h2>Chris Griffin</h2>
-              <p>
-                É o filho do meio de Lois e Peter Griffin. Nas primeiras
-                temporadas ele tinha 13 anos, depois completou 14. Tem uma
-                inteligência abaixo do normal, ao ponto de achar que um rato é
-                um peixe peludo por exemplo.
-              </p>
-              <a href="chris_griffin.html">Leia mais</a>
-            </div>
-            <img src="img/chris_griffin.png" />
-          </div>
-
-          <div class="card">
-            <div class="content">
-              <h2>Stewie Griffin</h2>
-              <p>
-                O excêntrico filho de 1 ano, Stewie está sempre equipado com
-                Rupert e com sua arma laser, e algumas vezes, querendo dominar o
-                mundo e matar Lois.
-              </p>
-              <a href="stewie_griffin.html">Leia mais</a>
-            </div>
-            <img class="imgstewie" src="./img/stewie_griffin.png" />
-          </div>
+      </section>
+      <section class="curio">
+        <h4>Curiosidade</h4>
+        <p>
+          Meg é a filha mais velha de Lois e Peter Griffin, e a irmã de Chris e
+          Stewie Griffin. Mas sabia que Meg é um apelido? Seu nome completo na
+          verdade é Megatron Griffin.
+        </p>
+      </section>
+      <section class="persona">
+        <div class="section_header_persona"><h3>Aparência</h3></div>
+        <div class="section_text">
+          <p>
+            Aparentemente, Meg não é nem gorda nem feia, mas por algum motivo
+            quase todos os personagens do show acham ela grotesca. Em "A Fish
+            out of Water", Meg mostra seus seios para Connie, Doug, Gina e para
+            outro garoto, mas todos eles começam a aplaudir ela. Em "A Fistful
+            of Meg", ela mostra seus seios para Mike Pulaski, e todos começam a
+            gritar apavorados e Mike derrete.
+          </p>
+          <p>
+            Meg já esteve bonita algumas vezes: em "Road to the Multiverse", Meg
+            é atraente no Universo Sem o Cristianismo" e passa por uma
+            reformulação ao virar cantora em "Don't Make Me Over".
+          </p>
+        </div>
+      </section>
+      <section class="relationship">
+        <div class="section_header_relationship"><h3>Relacionamentos</h3></div>
+        <div class="section_text">
+          <p>
+            Meg está constantemente tentando se enturmar com os populares da
+            escola. Ela consegue isso ao se tornar líder de torcida em "And the
+            Wiener Is...", porém só entrou para virar chacota na cerimônia dos
+            jogos. Suas principais amigas são Ruth, Patty e Esther.
+          </p>
+          <p>
+            Sofre bullying recorrentemente por alguns populares da escola, como
+            Connie D'Amico, Gina, Doug entre outros.
+          </p>
+          <p>
+            Em "Chitty Chitty Death Bang" ela entra para uma seita suicida por
+            influência da amiga Jennifer. Meg escapa por pouco, pois Peter a
+            impede de tomar a bebida responsável pela morte da seita.
+          </p>
+          <p>
+            Meg já teve vários namorados ao longo da série. É a paixão do nerd
+            da escola Neil Goldman, filho de Mort Goldman. Quagmire já mostrou
+            interesse por Meg em alguns episódios. Meg perde sua virgindade em
+            "Don't Make Me Over" com Jimmy Fallon.
+          </p>
+          <p>
+            No começo da série Meg tinha uma queda pelo vizinho Kevin Swanson,
+            que gostava da companhia dela.
+          </p>
+          <p>
+            Em "From Method to Madness" ela começa a namorar o nudista Jeff
+            Campbell.
+          </p>
+          <p>
+            Meg é rejeitada por vários garotos em "Barely Legal" quando os
+            convidava para ir ao baile da escola. Brian aceita ir ao baile com
+            ela, e então Meg vira totalmente obcecada por ele.
+          </p>
+          <p>
+            Meg quase se casa com um menino chamado Michael Milano em "Peter's
+            Daughter", mas ele a abandona no altar.
+          </p>
+          <p>
+            Ela começa a namorar o prisioneiro Luke em "Dial Meg for Murder".
+            Ela o esconde em casa, mas acaba sendo pego e Meg vai presa junto.
+          </p>
+          <p>
+            Em "Go, Stewie, Go!" ela namora um rapaz chamado Anthony, que é
+            flagrado por Meg ao beijar a mãe da namorada. No mesmo episódio é
+            visto num flashback que Meg já namorou um garoto sem pernas chamado
+            Justin.
+          </p>
+          <p>Ela se apaixona por um garoto amish chamado Eli em "Amish Guy".</p>
+          <p>
+            Ela passa o dia dos namorados com um menino chamado Toby em
+            "Valentine's Day in Quahog".
+          </p>
+        </div>
+      </section>
+      <section class="health">
+        <div class="section_header_health"><h3>Comportamento Perigoso</h3></div>
+        <div class="section_text">
+          <p>
+            Meg é regularmente vista com algum problema emocional. No filme
+            Stewie Griffin: The Untold Story é mostrado que no futuro ela faz
+            uma cirurgia de troca de sexo e vira um homem chamado Ron Griffin.
+          </p>
+          <p>
+            Após ser liberada da prisão em "Dial Meg for Murder", Meg vira uma
+            bandida. Ela passa a bater em todos da família e quase assalta a
+            Goldman's Pharmacy.
+          </p>
+          <p>
+            Também é revelado que Meg se corta, tem pensamentos suicidas. Em
+            "Seashorse Seashell Party", Meg desabafa para a família e detona
+            Peter, Lois e Chris.
+          </p>
         </div>
       </section>
     </main>
@@ -292,61 +340,5 @@
       </div>
       <h4>Front End I - Checkpoint 02</h4>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/ScrollTrigger.min.js"></script>
-    <script>
-      gsap.to('#banner_fg_logo', {
-        scrollTrigger: {
-          scrub: 0.5,
-          end: 500,
-        },
-        x: -630,
-        y: 300,
-      });
-      gsap.to('#banner_fg_logo', {
-        scrollTrigger: {
-          scrub: 0.5,
-          start: 100,
-          end: 1200,
-        },
-
-        scale: 0.2,
-        autoAlpha: 0,
-      });
-      gsap.from('#header_fg_logo', {
-        scrollTrigger: {
-          start: 350,
-          scrub: 1,
-          end: 600,
-        },
-        autoAlpha: 0,
-      });
-      gsap.to('#banner_desc', {
-        scrollTrigger: {
-          start: 200,
-          scrub: 0.5,
-        },
-        x: 1000,
-        y: 500,
-        autoAlpha: 0,
-      });
-      gsap.to('.button', {
-        scrollTrigger: {
-          scrub: 0.5,
-        },
-        x: 1000,
-        autoAlpha: 0,
-      });
-      gsap.to('.banner_img', {
-        scrollTrigger: {
-          scrub: 0.5,
-          start: 80,
-        },
-        scale: 0,
-        autoAlpha: 1,
-        y: 500,
-        x: -1000,
-      });
-    </script>
   </body>
 </html>

@@ -24,6 +24,18 @@ h2 {
   background: url('../img/bg_desc_banner.jpg') no-repeat top center;
 }
 
+.meg_griffin {
+  background: url('../img/mg_desc_banner.jpg') no-repeat top center;
+}
+
+.chris_griffin {
+  background: url('../img/cg_desc_banner.jpg') no-repeat top center;
+}
+
+.stewie_griffin {
+  background: url('../img/sg_desc_banner.jpg') no-repeat top center;
+}
+
 .banner {
   background-size: cover;
   height: 200px;
@@ -44,7 +56,8 @@ h2 {
   padding: 0 5vw 0 5vw;
 }
 
-section p, ul {
+section ul,
+section p {
   line-height: 1.5rem;
   font-size: 1rem;
   text-align: justify;

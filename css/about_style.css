@@ -32,9 +32,10 @@ h2 {
 }
 
 .description p {
-  line-height: 2.5rem;
-  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
   text-align: justify;
+  margin-bottom: 1rem;
 }
 
 .section_header {
