@@ -124,7 +124,7 @@ nav a::before {
 }
 
 .banner_img {
-  background: url('../img/banner_fg_desktop.png') no-repeat;
+  background: url('../img/banner_fg.png') no-repeat;
   background-size: cover;
   background-position: bottom left 65%;
   height: 80%;
@@ -198,6 +198,7 @@ nav a::before {
   text-shadow: -0.5px 2px 0.5px var(--text-color);
   -webkit-text-stroke-width: 0.5px;
   -webkit-text-stroke-color: var(--text-color);
+  text-transform: uppercase;
 }
 
 .characters .description {
@@ -251,7 +252,7 @@ nav a::before {
 
 .container .card .content {
   position: relative;
-  padding: 20px;
+  padding: 15px;
   opacity: 0;
   visibility: hidden;
   transition: 0.5s;
