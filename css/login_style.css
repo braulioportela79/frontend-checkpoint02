@@ -1,0 +1,106 @@
+body {
+  background-color: var(--text-color);
+}
+
+main {
+  position: relative;
+  color: #000;
+  font-size: 400%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92vh;
+  position: relative;
+}
+
+main .bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url('../img/login_banner.jpg') no-repeat center;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+form {
+  background-color: var(--secondary-color);
+  width: 90%;
+  max-width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2vw;
+}
+
+form p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+form a {
+  text-decoration: none;
+  color: var(--decoration-color);
+  font-weight: bold;
+}
+
+h1 {
+  font-family: Luckiest Guy;
+  letter-spacing: 1.5px;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  text-shadow: -0.5px 2px 0.5px var(--text-color);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: var(--text-color);
+  text-transform: uppercase;
+  align-self: center;
+}
+
+input,
+select {
+  height: 2.5rem;
+  border: 1.53px solid #000;
+  padding-left: 0.5rem;
+  font-size: 1.25rem;
+}
+
+input::placeholder {
+  color: #000;
+  font-size: 1.25rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em 2em 0.55em;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  font-weight: 800;
+  transition: 0.2s;
+  color: var(--text-color);
+  background-color: var(--nav-color);
+  align-self: center;
+}
+
+button:hover {
+  text-decoration: none;
+  background: var(--primary-color);
+  color: var(--text-color);
+}
