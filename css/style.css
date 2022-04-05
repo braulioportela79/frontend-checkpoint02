@@ -74,7 +74,7 @@ nav a::before {
   height: 5px;
 }
 
-ul {
+nav ul {
   display: flex;
   list-style: none;
   position: fixed;
@@ -188,7 +188,7 @@ label {
   flex-direction: column;
   justify-content: center;
   padding-top: 20px;
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: 8vh;
   align-items: center;
 }
 
@@ -314,6 +314,7 @@ label {
 
 footer {
   background: var(--decoration-color);
+  padding: 20px;
 }
 
 footer h4 {
@@ -324,12 +325,11 @@ footer h4 {
   font-size: 1rem;
   color: var(--secondary-color);
   text-shadow: 2px 2px 0.5px var(--text-color);
-  padding-bottom: 20px;
 }
 
-footer .description {
+.footer_description {
   max-width: 300px;
-  min-height: 100px;
+  min-height: 80px;
 }
 
 footer .student {
@@ -337,10 +337,10 @@ footer .student {
   justify-content: space-between;
 }
 
-footer .container {
+.footer_container {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
+  align-items: center;
   gap: 10px;
 }
 
@@ -356,7 +356,7 @@ footer h3 {
 
 footer p {
   color: var(--nav-color);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 footer svg {
@@ -407,10 +407,13 @@ footer svg {
     line-height: 2.2rem;
   }
 
-  footer .container {
+  .footer_container {
     flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 0;
+    justify-content: center;
+  }
+
+  .footer_description {
+    margin-bottom: 20px;
   }
 
   footer svg {
@@ -423,7 +426,7 @@ footer svg {
 }
 
 @media (min-width: 1024px) {
-  ul {
+  nav ul {
     flex-direction: row;
     position: inherit;
     height: auto;
@@ -479,36 +482,17 @@ footer svg {
     line-height: 1.2rem;
   }
 
-  .characters {
-    overflow: hidden;
-  }
-
   .container .card:hover img {
     left: 80%;
   }
 
-  footer {
-    padding: 20px 80px;
+  footer .left {
+    display: flex;
+    gap: 20px;
   }
 
-  footer .description {
-    max-width: 300px;
-  }
-
-  footer .container {
-    justify-content: space-between;
-  }
-
-  footer h3 {
-    font-size: 1.5rem;
-  }
-
-  footer h4 {
-    margin-top: 30px;
-    font-size: 1.3rem;
-  }
-
-  footer p {
-    font-size: 1rem;
+  footer .right {
+    display: flex;
+    gap: 20px;
   }
 }

@@ -42,12 +42,6 @@ h2 {
   margin-bottom: 50px;
 }
 
-footer .description p {
-  text-align: left;
-  font-size: 1rem;
-  line-height: normal;
-}
-
 @media (min-width: 550px) {
   .banner {
     height: 400px;
@@ -59,10 +53,6 @@ footer .description p {
   .banner {
     height: 500px;
     background-position: top right;
-  }
-
-  footer .description {
-    padding: 0;
   }
 }
 
@@ -76,13 +66,5 @@ footer .description p {
   .banner {
     height: 800px;
     background-position: top right;
-  }
-
-  footer h3 {
-    font-size: 1.5rem;
-  }
-
-  footer p {
-    font-size: 1rem;
   }
 }
