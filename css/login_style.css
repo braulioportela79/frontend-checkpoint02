@@ -4,7 +4,7 @@ body {
 
 main {
   position: relative;
-  color: #000;
+  color: var(--text-color);
   font-size: 400%;
   padding: 20px;
   display: flex;
@@ -23,7 +23,7 @@ main .bg {
   right: 0;
   background: url('../img/login_banner.jpg') no-repeat center;
   background-size: cover;
-  opacity: 0.2;
+  opacity: 0.05;
 }
 
 nav ul li.active a {
