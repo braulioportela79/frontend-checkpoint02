@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Family Guy | Front End - Checkpoint 02</title>
   </head>
-  <body id="home">
+  <body>
     <header>
       <img src="./img/dhlogo.png" alt="DH Logo" id="dh_logo" />
       <a href="index.html">
@@ -41,15 +41,15 @@
           <img src="./img/close_ham.png" class="closeham" alt="" />
         </label>
         <ul>
-          <li><a href="index.html#home">Home</a></li>
-          <li><a href="#characters">Personagens</a></li>
+          <li class="home active"><a href="#home">Home</a></li>
+          <li class="char"><a href="#char">Personagens</a></li>
           <li><a href="about.html">Sobre Nós</a></li>
           <li><a href="login.html">Login</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="section_banner">
+      <section class="section_banner" id="home">
         <div class="banner">
           <div class="banner_desc">
             <img src="./img/fg_logo.png" alt="" id="banner_fg_logo" />
@@ -62,7 +62,7 @@
           <div class="banner_img"></div>
         </div>
       </section>
-      <section class="characters" id="characters">
+      <section class="characters" id="char">
         <div class="section_header"><h2>PERSONAGENS</h2></div>
         <div class="description">
           <p>
@@ -404,6 +404,27 @@
         y: 500,
         x: -1000,
       });
+    </script>
+    <script>
+      const sections = document.querySelectorAll('section');
+      const navLi = document.querySelectorAll('nav ul li');
+      window.onscroll = () => {
+        var current = '';
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (pageYOffset >= sectionTop - 100) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLi.forEach((li) => {
+          li.classList.remove('active');
+          if (li.classList.contains(current)) {
+            li.classList.add('active');
+          }
+        });
+      };
     </script>
   </body>
 </html>

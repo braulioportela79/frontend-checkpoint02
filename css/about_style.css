@@ -9,6 +9,11 @@ section {
   align-items: center;
 }
 
+nav ul li.active a {
+  background-size: 100% 5px;
+  color: var(--secondary-color);
+}
+
 h2 {
   font-family: Luckiest Guy;
   letter-spacing: 1.5px;

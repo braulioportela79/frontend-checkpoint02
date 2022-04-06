@@ -26,6 +26,11 @@ main .bg {
   opacity: 0.2;
 }
 
+nav ul li.active a {
+  background-size: 100% 5px;
+  color: var(--secondary-color);
+}
+
 form {
   background-color: var(--secondary-color);
   width: 90%;

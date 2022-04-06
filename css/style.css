@@ -90,6 +90,11 @@ nav ul {
   gap: 1rem;
 }
 
+nav ul li.active a {
+  background-size: 100% 5px;
+  color: var(--secondary-color);
+}
+
 #check:checked ~ ul {
   top: 8vh;
 }
@@ -110,6 +115,10 @@ nav ul {
 
 #check {
   display: none;
+}
+
+#home {
+  scroll-margin-top: 8vh;
 }
 
 label {
