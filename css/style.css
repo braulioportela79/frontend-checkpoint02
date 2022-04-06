@@ -345,6 +345,22 @@ label {
   padding-top: 100px;
 }
 
+.card .imgbrian {
+  padding-top: 80px;
+}
+
+.card .imgchris {
+  padding-top: 40px;
+}
+
+.card .imgmeg {
+  padding-top: 30px;
+}
+
+.card .imglois {
+  padding-top: 20px;
+}
+
 footer {
   background: var(--decoration-color);
   padding: 20px;
